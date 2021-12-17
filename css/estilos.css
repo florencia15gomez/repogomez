@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ 
+.bodyheader{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+  
+  
+.header{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 10px; 
+    flex-wrap: wrap; 
+    background: rgb(255,254,255);
+    background: linear-gradient(180deg, rgba(255,254,255,1) 0%, rgba(124,141,176,1) 96%);  
+}
+
+.header__logo{
+    border-radius: 50%;
+}
+  
+.header__nav{
+    border-style: double;
+}
+
+.header__list{
+    display: flex;
+    list-style: none; 
+    flex-wrap: wrap; 
+    flex-direction: row; 
+}
+  
+
+.header__item{
+    font-family: 'Pacifico', cursive; 
+    font-weight: 50px; 
+    margin: 5px; 
+    height: 100%; 
+    padding: 5px; 
+}
+
+.header__link{
+    color: black;
+    font-size: 13px;
+}
+  
+.header__link:hover{
+    background-color: white; 
+    color: rgb(7, 6, 7); 
+}
+
+.bodymain{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 750px;
+    background: rgb(203,184,206);
+    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%);
+    background-image: url(../assets/fondomejorado.jpeg);
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.main__article{
+    text-align: center;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: 'Meow Script', cursive;
+}
+
+.mobile__uno{
+    font-size: 70px;
+}
+
+.main__pres{
+    width: 100px;
+    padding: 0%;
+    border: solid 10px #FCF3CF;
+}
+
+.footer{
+    background: rgb(255,254,255);
+    background: linear-gradient(0deg, rgba(255,254,255,1) 0%, rgba(124,141,176,1) 96%);    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+.footer__info{
+    font-family: 'Acme', sans-serif; 
+    color: black;
+}
+
+.footer__wp{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 100px;
+}
+
+.footer__list{
+    font-size: 1rem;
+    font-family: 'Acme', sans-serif;
+    color: black; 
+}
+
+.footer__ubi{
+    line-height: 1cm;
+    font-family: 'Acme', sans-serif; 
+    list-style-type: square;
+    color: black;
+}
+
+.footer__insta{
+    font-family: 'Acme', sans-serif;
+    color: black; 
+}
+
+.footer__logo{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 100px;
+}
+
+.insta{
+    color: black;
+}
+
+/* HTML NOSOTRAS*/
+
+.main__nosotras{
+    padding: 20px 20px;
+    display: grid;
+    grid-column: 1fr 1fr;
+    background: rgb(203,184,206);
+    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%);
+}
+
+.main__infor{
+    display: flex;
+    gap: 20px;
+}
+
+.main__foto{
+    border: solid;
+    border-color: darkolivegreen;
+}
+
+.main__texto{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+.main__titulo{
+    font-family: 'Corinthia', cursive;;
+    font-size: -webkit-xxx-large;
+    border: solid;
+    text-align: center;
+}
+
+.main__histo{
+    line-height: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    text-align: justify;
+}
+
+/*HTML PRODUCTOS*/
+
+.main__produ{
+    background: rgb(203,184,206);
+    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%);
+    padding: 20px 20px;
+}
+
+.main__fondo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    
+}
+
+.main__arti{
+    flex-direction: column;
+    display: flex;
+}
+
+.main__dise{
+    width: 450px;
+    position: relative;
+    display: block;
+    border-radius: 60pc; 
+    border: double 5px;  
+    transition:2s transform;
+}
+
+.main__sub{  
+    font-family: 'Acme';
+    font-size: 30px;
+    text-align: center;
+}
+
+.descrip{
+    background: rgb(203,184,206);
+    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%);
+    display:inline-block;   
+    overflow:hidden; 
+    position:relative;
+    margin:1px 0;
+    padding:0;
+}
+
+.img__descrip{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba(131, 179, 235, 0.7);    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: black;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    transition: 0.5s opacity ease-in-out;
+    opacity:0; 
+    border-radius: 60%;
+}
+
+.img__descrip:before {
+    position:absolute;
+    left:-10%;
+    top:-20%;
+    width:55%;
+    height:150%;
+    background:rgba(255,255,255,0.1);
+    content:'';
+    transform:rotate(15deg) translateX(-100%);
+    transition:2s all;
+}
+
+.descrip:hover .img__descrip:before {
+    transform:rotate(150deg) translateX(0);
+}
+  
+.descrip:hover .main__dise {
+    transform: scale(1.2, 1.2) rotate(10deg);
+}
+
+.descrip:hover .img__descrip{
+    opacity: 1;    
+}
+
+/*HTML GALERIA*/
+
+.main__galeria{
+    background: rgb(203,184,206);
+    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%); 
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    grid-template-rows: 75px; 
+    gap: 10px; 
+    padding: 2rem; 
+    grid-auto-flow: dense; 
+}
+  
+.img-container img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-style: double;
+}
+  
+.vertical {
+    grid-row: span 3;
+    grid-column: span 3; 
+}
+ 
+.horizontal {
+    grid-column: span 2; 
+    grid-row: span 4;
+}
+  
+.grande{
+    grid-column: span 3; 
+    grid-row: span 3; 
+}
+  
+
+/*HTML CONTACTO*/
+
+.fondo{
+    display: flex;
+    background: rgb(203,184,206);
+    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%);
+
+    padding: 20px 20px;
+    background-image: url(../assets/fondoconsul.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form{
+    width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color: #E9B1FB ;
+}
+
+.campo{
+    background-color:  #e9e4b9;
+}
+
+.form__titu{
+    font-family: 'Acme';
+    text-align: center;
+}
+
+.form__label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+    border: solid 2px;
+    gap: 4px;
+}
+
+.input__mail{
+    width:180px;
+	padding:3px 10px;
+	border:1px solid #000000;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.input__name{
+    width:180px;
+	padding:3px 10px;
+	border:1px solid #000000;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.input__last{
+    width:180px;
+	padding:3px 10px;
+	border:1px solid #000000;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.input__tele{
+    width:180px;
+	padding:3px 10px;
+	border:1px solid #000000;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.input__text{
+    width: 180px;
+    padding: 10px 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 10px 10px 10px 50px;
+    display: inline-block;
+}
+
+.input__submit{
+    width:100%;
+    padding:8px 16px;
+    margin-top:32px;
+    border:1px solid #000;
+    border-radius:5px;
+    display:block;
+    color:#000000;
+    background-color: #e9e4b9;
+} 
+    
+.input__submit:hover{
+    cursor:pointer;
+}
+
+
+
+
+
+/*------MEDIA QUERIES------*/
+
+@media screen and (max-width:425px) {
+    .main__arti{
+        padding: 10px 10px;
+    }
+    .main__dise{
+        width: 250px;
+    }
+    .mobile{
+        font-size: 3rem;
+    }
+    .mobile__uno{
+        font-size: 2rem;
+    }
+    .header__logo{
+        
+        width: 100px;
+    }
+    .bodymain{
+        background-position: top;
+        background-size: 600px;
+        height: 338px;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .footer__list{
+        font-size: 14px;
+    }
+
+    .footer__logo{
+        padding: 14px;
+    }
+    .footer__wp{
+        padding: 18px;
+    }
+
+    .main__infor{
+        display: grid;
+        gap: 20px;
+        grid-template-rows: 1fr;
+    }
+
+    .main__foto{
+        width: 250px;
+    height: 250px;
+    }
+
+    .main__fondo{
+        display: block;
+        
+    }
+}
