@@ -432,8 +432,10 @@
     }
 
     .footer{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         font-size: 14px;
     }
 
@@ -442,6 +444,7 @@
     }
 
     .footer__logo{
+        
         padding: 14px;
     }
     .footer__wp{
@@ -449,9 +452,10 @@
     }
 
     .main__infor{
-        display: grid;
-        gap: 20px;
-        grid-template-rows: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .main__foto{
