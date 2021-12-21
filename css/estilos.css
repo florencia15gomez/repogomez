@@ -475,12 +475,50 @@ h3 span {
         width: 250px;
     }
 
-    .mobile{
-        font-size: 3rem;
+    .contenedor{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
-    .mobile__uno{
+    h1{
+        font-size: 3rem;
+        padding: 7px;
+        background-color: transparent;
+    }
+
+    h1 span{
+        position: absolute;
+        animation: none;
+        border-left: none;
+        background-color: transparent;
+    }
+    h2 {
         font-size: 2rem;
+        background-color: transparent;
+    }
+    
+    h2 span{
+        position: absolute;
+        animation: none;
+        border-left: none;
+        background-color: transparent;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        position: relative;
+        background-color: transparent;
+    }
+
+    h3 span{
+        position: absolute;
+        animation: none;
+        background-color: transparent;
+        border-left: none;
     }
 
     .header{
