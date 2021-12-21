@@ -60,9 +60,8 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 750px;
-    background: rgb(203,184,206);
-    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%);
-    background-image: url(../assets/fondomejorado.jpeg);
+    background: rgb(227,194,113);
+    background: radial-gradient(circle, rgba(227,194,113,1) 2%, rgba(186,107,249,1) 24%, rgba(186,103,212,1) 50%, rgba(155,158,251,1) 100%);    background-image: url(../assets/fondomejorado.jpeg);
     background-position: center;
     background-repeat: no-repeat; 
 }
@@ -136,9 +135,8 @@
     padding: 20px 20px;
     display: grid;
     grid-column: 1fr 1fr;
-    background: rgb(203,184,206);
-    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%);
-}
+    background: rgb(227,194,113);
+    background: radial-gradient(circle, rgba(227,194,113,1) 2%, rgba(186,107,249,1) 24%, rgba(186,103,212,1) 50%, rgba(155,158,251,1) 100%);}
 
 .main__infor{
     display: flex;
@@ -174,9 +172,8 @@
 /*HTML PRODUCTOS*/
 
 .main__produ{
-    background: rgb(203,184,206);
-    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%);
-    padding: 20px 20px;
+    background: rgb(227,194,113);
+    background: radial-gradient(circle, rgba(227,194,113,1) 2%, rgba(186,107,249,1) 24%, rgba(186,103,212,1) 50%, rgba(155,158,251,1) 100%);    padding: 20px 20px;
 }
 
 .main__fondo{
@@ -208,9 +205,8 @@
 }
 
 .descrip{
-    background: rgb(203,184,206);
-    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%);
-    display:inline-block;   
+    background: rgb(227,194,113);
+    background: radial-gradient(circle, rgba(227,194,113,1) 2%, rgba(186,107,249,1) 24%, rgba(186,103,212,1) 50%, rgba(155,158,251,1) 100%);    display:inline-block;   
     overflow:hidden; 
     position:relative;
     margin:1px 0;
@@ -262,9 +258,8 @@
 /*HTML GALERIA*/
 
 .main__galeria{
-    background: rgb(203,184,206);
-    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%); 
-}
+    background: rgb(227,194,113);
+    background: radial-gradient(circle, rgba(227,194,113,1) 2%, rgba(186,107,249,1) 24%, rgba(186,103,212,1) 50%, rgba(155,158,251,1) 100%);}
 
 .container {
     display: grid; 
@@ -302,14 +297,10 @@
 
 .fondo{
     display: flex;
-    background: rgb(203,184,206);
-    background: linear-gradient(123deg, rgba(203,184,206,1) 0%, rgba(203,184,206,1) 100%);
-
+    background: rgb(227,194,113);
+    background: radial-gradient(circle, rgba(227,194,113,1) 2%, rgba(186,107,249,1) 24%, rgba(186,103,212,1) 50%, rgba(155,158,251,1) 100%);
     padding: 20px 20px;
-    background-image: url(../assets/fondoconsul.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 .form{
@@ -408,26 +399,43 @@
 
 /*------MEDIA QUERIES------*/
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
     .main__arti{
         padding: 10px 10px;
+        align-items: center;
+        justify-content: center;
     }
+
     .main__dise{
         width: 250px;
     }
+
     .mobile{
         font-size: 3rem;
     }
+
     .mobile__uno{
         font-size: 2rem;
     }
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .header__logo{
-        
         width: 100px;
     }
+
+    .header__list{
+        align-items: center;
+        justify-content: center;
+    }
+
     .bodymain{
         background-position: top;
-        background-size: 600px;
+        background-size: 768px;
         height: 338px;
     }
 
@@ -447,16 +455,24 @@
         
         padding: 14px;
     }
+
     .footer__wp{
         padding: 18px;
     }
 
-    .main__infor{
+    .footer__info{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
+    .main__infor{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }    
 
     .main__foto{
         width: 250px;
@@ -465,6 +481,17 @@
 
     .main__fondo{
         display: block;
-        
     }
+
+    .main__titulo{
+        font-size: xx-large;
+    }
+
+    .main__histo{
+        font-size: 15px;
+    }
+
+
 }
+
+    
