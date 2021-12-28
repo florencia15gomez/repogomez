@@ -39,8 +39,8 @@
   
 
 .header__item{
-    font-family: 'Pacifico', cursive; 
-    font-weight: 50px; 
+    font-family: 'Oooh Baby', cursive; 
+    font-size: x-large;
     margin: 5px; 
     height: 100%; 
     padding: 5px; 
@@ -50,20 +50,23 @@
     color: black;
     font-size: 13px;
 }
+
+.nav-link:hover{
+    background-color: white; 
+}
+
+
   
 .header__link:hover{
-    background-color: white; 
-    color: rgb(7, 6, 7); 
+    background-color: #216283; 
+    color: white; 
 }
 
 .bodymain{
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 750px;
-    background: rgb(227,194,113);
-    background: radial-gradient(circle, rgba(227,194,113,1) 2%, rgba(186,107,249,1) 24%, rgba(186,103,212,1) 50%, rgba(155,158,251,1) 100%);    background-image: url(../assets/fondomejorado.jpeg);
-    background-position: center;
-    background-repeat: no-repeat; 
+    grid-template-rows: 1fr 2fr auto;
+    height: 100vw;
+    background-color: #216283;
 }
 
 .contenedor {
@@ -78,8 +81,8 @@
 h1 { 
 	position: relative; 
 	float: left;
-	background-color: #c9b8c8;
-	color: black;
+	background-color: #216283;
+	color: white;
 	font-size: 7rem;
     font-family: 'Meow Script', cursive;
     text-align: center;
@@ -89,16 +92,16 @@ h1 span {
     position:absolute;
     right:0;
     width:0;
-    background-color: #c9b8c8;
-    border-left: 1px solid #000;
+    background-color: #216283;
+    border-left: 1px solid white;
     animation: escribir 5s steps(30);
 }
 
 h2 { 
 	position: relative; 
 	float: left;
-	background-color: #c9b8c8;
-	color: black;
+	background-color: #216283;
+	color: white;
 	font-size: 6rem;
     font-family: 'Meow Script', cursive;
     text-align: center;
@@ -108,16 +111,16 @@ h2 span {
     position:absolute;
     right:0;
     width:0;
-    background-color: #c9b8c8;
-    border-left: 1px solid #000;
+    background-color: #216283;
+    border-left: 1px solid white;
     animation: escribir 5s steps(32);
 }
 
 h3 { 
 	position: relative; 
 	float: left;
-	background-color: #c9b8c8;
-	color: black;
+	background-color: #216283;
+	color: white;
 	font-size: 5rem;
     font-family: 'Meow Script', cursive;
     text-align: center;
@@ -127,8 +130,8 @@ h3 span {
     position:absolute;
     right:0;
     width:0;
-    background-color: #c9b8c8;
-    border-left: 1px solid #000;
+    background-color: #216283;
+    border-left: 1px solid white;
     animation: escribir 5s steps(34);
 }
 
@@ -147,8 +150,7 @@ h3 span {
 }
 
 .footer{
-    background: rgb(255,254,255);
-    background: linear-gradient(0deg, rgba(255,254,255,1) 0%, rgba(124,141,176,1) 96%);    justify-content: space-evenly;
+    background-color: #c9b8c8;    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     }
@@ -223,6 +225,15 @@ h3 span {
     font-size: -webkit-xxx-large;
     border: solid;
     text-align: center;
+}
+
+.row{
+    display: flex;
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
 }
 
 .main__histo{
