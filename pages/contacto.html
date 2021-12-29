@@ -4,56 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Meow+Script&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+
+
+     <!--CDN CSS BOOTSTRAP-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="../css/estilos.css">
+
+
     <title>Mar de Lavandas</title>
 </head>
 <body>
-    <header class= "bodyheader">
-        <div class="header">
-            <img class="header__logo" width="100px" height="100px" src="../assets/Mar de Lavandas.png" alt="Logo Mar de Lavandas">
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="../index.html">INICIO</a></li>
-                    <li class="header__item"><a class="header__link" href="../pages/nosotras.html">NOSOTRAS</a></li>
-                    <li class="header__item"><a class="header__link" href="../pages/productos.html">PRODUCTOS</a></li>
-                    <li class="header__item"><a class="header__link" href="../pages/galeria.html">GALERIA</a></li>
-                    <li class="header__item"><a class="header__link" href="#">CONTACTO</a></li>
-                </ul>
-            </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c9b8c8;">
+        <div class="container-fluid justify-content-center">
+          <a class="navbar-brand" href="#"><img src="../assets/Mar de Lavandas.png" width="30%" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="header__item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="header__item">
+                <a class="nav-link" href="../pages/nosotras.html">Nosotras</a>
+              </li>
+              <li class="header__item">
+                <a class="nav-link" href="../pages/productos.html">Productos</a>
+              </li>
+              <li class="header__item">
+                <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+              </li>
+              <li class="header__item">
+                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>    <div class="fondo">
-        <form class="form" action="#" method="get">
-            <fieldset class="campo">
-                <legend class="form__titu">Datos personales</legend>
-                <label class="form__label" for="name">Nombre</label>
-                <input class="input__name" type="text" placeholder="Nombre">
-                <label class="form__label" for="lastname">Apellido</label>
-                <input class="input__last" type="text" placeholder="Apellido">
-            </fieldset>
-            <fieldset class="campo">
-                <legend class="form__titu">Comunicación</legend>
-                <label class="form__label" for="email">Email</label>
-                <input class="input__mail" type="email" name="email" id="email" placeholder="Email">
-                <label class="form__label" for="telephone">Teléfono</label>
-                <input class="input__tele" type="tel" name="Teléfono" id="Teléfono" placeholder="Teléfono">
-            </fieldset>
-            <fieldset class="campo">
-                <textarea class="input__text" name="" id="" cols="30" rows="10">Escriba su consulta</textarea>
-            </fieldset>
-            <input class="input__submit" type="submit" value="ENVIAR">
-            <input class="input__submit" type="reset" value="BORRAR">
-        </form>
-    </div>
+      </nav>
+
+
+      <div class="container-fluid mb-1">
+          <div class="row" style="background-color: #216283;">
+              <div class="col-md-6">
+                    <form>
+                        <h5>Clientes</h5>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <input class="input__submit" type="submit" value="ENVIAR">
+                        <input class="input__submit" type="reset" value="BORRAR">
+                  </form>
+                </div>  
+                <div class="col-md-6">
+                    <form>
+                        <h5>Empresa</h5>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <input class="input__submit" type="submit" value="ENVIAR">
+                        <input class="input__submit" type="reset" value="BORRAR">
+                  </form>
+                </div>
+          </div>
+      </div>
+
+ 
     <footer class="footer">
         <div class="footer__info">
-            <p>Número de teléfono: +5493513062867</p>
+            <p class="tele">Número de teléfono: +5493513062867</p>
             <img class="footer__wp" src="../assets/png-clipart-computer-icons-whatsapp-social-media-instant-messaging-whatsapp-text-logo.png" alt="logo whatsapp">
         </div>
         <div class="footer__punto">    
@@ -68,5 +119,10 @@
             <img class="footer__logo" src="../assets/kisspng-computer-icons-clip-art-instagram-icon-5b5db371a68c38.5202841415328674416822.jpg" alt="iconoinstagrma">
         </div>
     </footer>
+
+    <!--CDN JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
 </body>
 </html>

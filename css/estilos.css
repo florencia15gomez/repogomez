@@ -3,40 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
  
-.bodyheader{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-  
-  
-.header{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 10px; 
-    flex-wrap: wrap; 
-    background: rgb(255,254,255);
-    background: linear-gradient(180deg, rgba(255,254,255,1) 0%, rgba(124,141,176,1) 96%);  
-}
-
-.header__logo{
-    border-radius: 50%;
-}
-  
-.header__nav{
-    border-style: double;
-}
-
-.header__list{
-    display: flex;
-    list-style: none; 
-    flex-wrap: wrap; 
-    flex-direction: row; 
-}
-  
 
 .header__item{
     font-family: 'Oooh Baby', cursive; 
@@ -46,9 +13,23 @@
     padding: 5px; 
 }
 
-.header__link{
+.navbar-nav{
+    align-items: center;
+    font-family: 'Oooh Baby', cursive; 
+    font-size: x-large;
+}
+
+.header__item1{
+    font-family: 'Oooh Baby', cursive; 
+    font-size: 10px;
+    margin: 5px; 
+    height: 100%; 
+    padding: 5px; 
+}
+
+.nav-link{
     color: black;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .nav-link:hover{
@@ -56,11 +37,6 @@
 }
 
 
-  
-.header__link:hover{
-    background-color: #216283; 
-    color: white; 
-}
 
 .bodymain{
     display: grid;
@@ -160,6 +136,9 @@ h3 span {
     color: black;
 }
 
+.tele{
+    color: black;
+}
 .footer__wp{
     filter: brightness(1.1);
     mix-blend-mode: multiply;
@@ -200,8 +179,7 @@ h3 span {
     padding: 20px 20px;
     display: grid;
     grid-column: 1fr 1fr;
-    background: rgb(227,194,113);
-    background: radial-gradient(circle, rgba(227,194,113,1) 2%, rgba(186,107,249,1) 24%, rgba(186,103,212,1) 50%, rgba(155,158,251,1) 100%);}
+    background-color: #216283;}
 
 .main__infor{
     display: flex;
@@ -234,6 +212,8 @@ h3 span {
 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: justify;
+    font-size: x-large;
+    color: white;
 }
 
 .main__histo{
@@ -241,6 +221,18 @@ p{
     font-family: 'Pacifico', cursive;
     font-size: 25px;
     text-align: justify;
+}
+
+.presentacion{
+   
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+}
+
+.card-text{
+    color: black;
 }
 
 /*HTML PRODUCTOS*/
@@ -256,6 +248,18 @@ p{
     gap: 20px;
     justify-items: center;
     
+}
+
+h4{
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+    background-color: #216283;
+}
+
+.detalle{
+    background-color: #c9b8c8;
+    color: black;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .main__arti{
