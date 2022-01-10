@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   
+    <!--links de google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Meow+Script&display=swap" rel="stylesheet">
@@ -15,91 +15,134 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300&display=swap" rel="stylesheet">
 
+    <!--animaciones link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-     <!--CDN CSS BOOTSTRAP-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <link rel="stylesheet" href="../css/estilos.css">
+    <!--CDN CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
 
-    <title>Mar de Lavandas</title>
+  <title>Mar de Lavandas</title>
+
 </head>
+
 <body>
+                                          <!--BARRA DE NAVEGACIÓN-->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c9b8c8;">
+  <div class="container-fluid justify-content-center">
+    <a class="navbar-brand" href="#"><img src="../assets/Mar de Lavandas.png" width="30%" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="header__item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="header__item">
+            <a class="nav-link active" aria-current="page" href="#">Nosotras</a>
+          </li>
+          <li class="header__item">
+            <a class="nav-link" href="../pages/productos.html">Productos</a>
+          </li>
+          <li class="header__item">
+            <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+          </li>
+          <li class="header__item">
+            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+</nav>
+                                          <!--FIN DEL NAV-->
 
-
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c9b8c8;">
-        <div class="container-fluid justify-content-center">
-          <a class="navbar-brand" href="#"><img src="../assets/Mar de Lavandas.png" width="30%" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="header__item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="header__item">
-                <a class="nav-link active" aria-current="page" href="#">Nosotras</a>
-              </li>
-              <li class="header__item">
-                <a class="nav-link" href="../pages/productos.html">Productos</a>
-              </li>
-              <li class="header__item">
-                <a class="nav-link" href="../pages/galeria.html">Galeria</a>
-              </li>
-              <li class="header__item">
-                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
+ 
+<hr class="separador">
+   
+                                        <!--Página de Nosotras-->
+                                          
+<main class="main__nosotras">
+  <h1 class="main__titulo">¿Cómo surgió Mar de Lavandas?</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3"> 
+        <img src="../assets/nosotraas.jpeg" width="100%" alt="">
+      </div>
+      <div class="col-sm-6 col-md-8 col-lg-9"> 
+        <p class="textlg">Al principio pensé que crear un emprendimiento iba a ser complicado, el tiempo de elaboración de los productos y si las personas lo comprarían, rondaba por mi mente. Gracias al apoyo de familia y amigues, pude llevar adelante este proyecto que me apasiona. Empecé con algunos diseño, como los inviduales y los caminos de mesas, pero después fui agregando otras ideas para lograr que tu hogar o espacio sea lo más acogedor posible. Para la selección de cada tela y color, nos inspiramos en la naturaleza y el mar, por eso nuestros diseños predominan los volados, los diseños minimalistas de materiales nobles, telas y tines naturales. Siempre intentamos encontrarnos en alguna textura, color o fragancia que nos identifique y así crear y hacerlo parte de nuestro Mar de Lavandas.</p>
+      </div>
+    </div>
+    <div class="row presentacion">
+      <div class="card" style="width: 18rem;">
+        <img src="../assets/presentacion.png" class="card-img-top" alt="presentacion">
+        <div class="card-body">
+          <p class="card-text">Mar Boiero, CEO. Diseño, producción y elaboración</p>
         </div>
-      </nav>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../assets/presentacion2.png" class="card-img-top" alt="presentacion2">
+        <div class="card-body">
+          <p class="card-text">Victoria Boiero, CMO. Community Manager y Redes</p>
+        </div>
+      </div>
+    </div>
+  </div>    
+</main>
+                                          <!--Fin de resumen-->
+<hr class="separador">   
+                                          <!--Footer con Bootstrap prueba-->
+<div class="container-fluid">
+  <footer class="footer">
+    <div class="container-fluid p-4">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 mb-4">
+          <h5>Teléfono</h5>
+          <p style="text-align: center;">+5493513062867</p>
+          <img class="footer__wp" src="../assets/png-clipart-computer-icons-whatsapp-social-media-instant-messaging-whatsapp-text-logo.png" alt="logo whatsapp">
+        </div>
+        <div class="col-lg-4 col-md-4 mb-4">
+          <h5>Puntos de venta</h5>
+          <ul>
+            <li>
+              <p style="text-align: center;"> Córdoba Capital </p>
+            </li>
+            <li>
+              <p style="text-align: center;"> Villa Dolores-Córdoba </p>
+            </li>
+            <li>
+              <p style="text-align: center;"> La Rioja Capital </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 mb-4">
+          <h5>Redes Sociales</h5>
+          <p style="text-align: center;"><a href="https://www.instagram.com/mardelavandas/?hl=es-la"></a>Instagram</p>
+          <img class="footer__logo" src="../assets/kisspng-computer-icons-clip-art-instagram-icon-5b5db371a68c38.5202841415328674416822.jpg" alt="iconoinstagrma">
+          <p style="text-align: center;">Facebook</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+                                      <!--fin del footer-->  
 
 
-    
-    <main class="main__nosotras">
-        <h1 class="main__titulo">¿Cómo surgió Mar de Lavandas?</h1>
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3"> <img src="../assets/nosotraas.jpeg" width="100%" alt=""></div>
-            <div class="col-sm-6 col-md-8 col-lg-9"> <p>Al principio pensé que crear un emprendimiento iba a ser complicado, el tiempo de elaboración de los productos y si las personas lo comprarían, rondaba por mi mente. Gracias al apoyo de familia y amigues, pude llevar adelante este proyecto que me apasiona. Empecé con algunos diseño, como los inviduales y los caminos de mesas, pero después fui agregando otras ideas para lograr que tu hogar o espacio sea lo más acogedor posible. Para la selección de cada tela y color, nos inspiramos en la naturaleza y el mar, por eso nuestros diseños predominan los volados, los diseños minimalistas de materiales nobles, telas y tines naturales. Siempre intentamos encontrarnos en alguna textura, color o fragancia que nos identifique y así crear y hacerlo parte de nuestro Mar de Lavandas.</p></div>
-        </div>
-        <div class="presentacion">
-                  <div class="card" style="width: 18rem;">
-            <img src="../assets/presentacion.png" class="card-img-top" alt="presentacion">
-            <div class="card-body">
-              <p class="card-text">Mar Boiero, CEO. Diseño, producción y elaboración</p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="../assets/presentacion2.png" class="card-img-top" alt="presentacion2">
-            <div class="card-body">
-              <p class="card-text">Victoria Boiero, CMO. Community Manager y Redes</p>
-            </div>
-          </div>
-        </div>
-       
-    </main>
-
-
-    <footer class="footer">
-        <div class="footer__info">
-            <p class="tele">Número de teléfono: +5493513062867</p>
-            <img class="footer__wp" src="../assets/png-clipart-computer-icons-whatsapp-social-media-instant-messaging-whatsapp-text-logo.png" alt="logo whatsapp">
-        </div>
-        <div class="footer__punto">    
-            <ul class="footer__list"> Puntos de encuentro:
-                <li class="footer__ubi">Córdoba Capital</li>
-                <li class="footer__ubi">Villa Dolores - Córdoba</li>
-                <li class="footer__ubi">La Rioja Capital</li>
-            </ul>
-        </div>
-        <div class="footer__insta">
-            <p><a href="https://www.instagram.com/mardelavandas/?hl=es-la"> Nuestro Instagram</a></p>
-            <img class="footer__logo" src="../assets/kisspng-computer-icons-clip-art-instagram-icon-5b5db371a68c38.5202841415328674416822.jpg" alt="iconoinstagrma">
-        </div>
-    </footer>
-
-    <!--CDN JS-->
+  <!--CDN JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!--animaciones AOS-->
+    <script>
+      AOS.init();
+    </script>
+
 
 </body>
 </html>
