@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
 /*---BARRA DE NAVEGACIÓN---*/
 .header__item{
@@ -84,7 +83,6 @@ h1 span {
     to { width:0 }
 }
 
-/*INICIO FOOTER*/
 .beneficios--ml{
     background-image: url(../assets/fondo2inicio.png);
     background-size: cover;
@@ -109,6 +107,7 @@ h1 span {
     padding: 30px;
 }
 
+/*INICIO FOOTER*/
 .footer{
     background-color: #c9b8c8;
     display: flex;
@@ -163,6 +162,7 @@ p{
 
 .card-text{
     color: black;
+    font-family: 'Laila', sans-serif;
 }
 
 /*FIN HTML NOSOTRAS*/
@@ -175,6 +175,12 @@ h4{
     background-color: #216283;
 }
 
+
+/*HTML GALERIA*/
+
+.dise--ga{
+    border: solid 5px olive;
+}
 
 /*HTML CONTACTO*/
 
@@ -225,6 +231,11 @@ h5{
         display: flex;
         background-color: #c9b8c8;
     }
+
+    .textlg{
+        font-size: small;
+    }
+    
     
 }
 
@@ -304,11 +315,11 @@ h5{
     .main__titulo{
         font-size: xx-large;
     }
-
+    
     .textlg{
         font-size: small;
     }
-
+    
 }
 
     

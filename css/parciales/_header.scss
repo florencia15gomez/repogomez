@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar-nav{
+    align-items: center;
+    font-family: 'Oooh Baby', cursive; 
+    font-size: x-large;
+    .header__item{
+        font-family: 'Oooh Baby', cursive; 
+        font-size: x-large;
+        margin: 5px; 
+        height: 100%; 
+        padding: 5px; 
+    }
+}
+.nav-link{
+    color: black;
+    font-size: 20px;
+    &:hover{
+        background-color: white; 
+    }
+}
+
+.separador{
+    background-color: yellow;
+    padding: 15px;
+    margin: 0%;
+}
+
+
+
+

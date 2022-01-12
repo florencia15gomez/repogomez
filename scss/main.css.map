@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,sEAAI;AACZ,OAAO,CAAC,sEAAI;AACZ,OAAO,CAAC,yEAAI;AACZ,OAAO,CAAC,yEAAI;ACHZ,AAAA,WAAW,CAAA;EACP,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,oBAAoB;EACjC,SAAS,EAAE,OAAO;CACrB;;AACD,AAAA,aAAa,CAAA;EACT,WAAW,EAAE,oBAAoB;EACjC,SAAS,EAAE,OAAO;EAClB,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,GAAG;CACf;;AACD,AAAA,SAAS,CAAA;EACL,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI;CAClB;;AACD,AAAA,SAAS,AAAA,MAAM,CAAA;EACX,gBAAgB,EAAE,KAAK;CAC1B",
+    "sources": [
+        "main.scss",
+        "../css/parciales/_tipografia.scss",
+        "../css/parciales/_header.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

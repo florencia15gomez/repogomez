@@ -1,0 +1,19 @@
+
+.footer{
+    background-color: #c9b8c8;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .footer__logo{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 80px;
+    }
+    .footer__wp{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 80px;
+        }
+}
+
+

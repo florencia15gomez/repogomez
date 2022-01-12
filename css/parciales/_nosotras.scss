@@ -1,0 +1,34 @@
+@import "../parciales/_variables";
+.main__nosotras{
+    padding: 20px 20px;
+    display: grid;
+    grid-column: 1fr 1fr;
+    background-color: $main_color;
+    .main__titulo{
+        font-family: 'Corinthia', cursive;;
+        font-size: -webkit-xxx-large;
+        border: solid;
+        text-align: center;
+    }
+}
+
+.row{
+    display: flex;
+    p{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: justify;
+        font-size: x-large;
+        color: white;
+    }
+}
+
+.presentacion{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   .card-text{
+       color: black;
+       font-family: 'Laila', sans-serif;
+   }
+}
+

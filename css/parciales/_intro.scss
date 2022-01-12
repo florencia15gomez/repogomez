@@ -1,0 +1,58 @@
+@import "../parciales/_variables";
+.bodymain{
+    background-color: $main_color;
+}
+.contenedor {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+h1 { 
+    position: relative; 
+    float: left;
+    background-color: $main_color;
+    color: white;
+    font-size: 7rem;
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+}
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background-color: $main_color;
+    border-left: 1px solid white;
+    animation: escribir 5s steps(30);
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+.beneficios--ml{
+    background-image: url(../assets/fondo2inicio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .info-bf{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .info--bf{
+            width: 100%;
+            border-radius: 50%;
+            padding: 30px;
+        }
+    }
+}
+
