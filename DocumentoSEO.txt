@@ -1,0 +1,31 @@
+Estos son los cambios que he realizado
+
+En la página Inicio agregué lo siguiente:
+KeyWords: ARTE, DECO, ECO, TEXTIL, MAR LAVANDAS
+Titulos: Inicio | Mar de Lavandas
+Descripción: Mar de Lavandas es un emprendimiento que ofrece a sus clientes productos originales y ecológicos hechos a medida.
+Encabezados: H1: Bienvenidos a Mar de lavandas; H2: ¿Por qué elegir nuestros productos?
+-----------------------------------------
+En la página Nosotras agregué lo siguiente:
+KeyWords: EMPRENDIMIENTO, COMO SURGE, MAR LAVANDAS
+Titulos: Nosotras | Mar de Lavandas
+Descripción: Conocé nuestra historia y quienes somos.
+Encabezados: H1: ¿Cómo surgió Mar de Lavandas?
+-----------------------------------------
+En la página Productos agregué lo siguiente:
+KeyWords: PANERAS, INDIVIDUALES, CAMINOS MESA, FUNDAS, VELAS, AROMATIZANTES, MAR LAVANDAS
+Titulos: Productos | Mar de Lavandas
+Descripción: Productos eco-friendly y originales para que personalices todos tus espacios.
+Encabezados: H1: Productos que ofrecemos; H2: ¿Qué variedades poseemos?
+-----------------------------------------
+En la página Galeria agregué lo siguiente:
+KeyWords:FOTOS, CLIENTES CONTENTOS, PERSONALES, MAR LAVANDAS
+Titulos: Galeria | Mar de Lavandas
+Descripción: Nuestros clientes están contentos por sus productos de Mar de Lavandas. Mirá sus fotos enviadas en nuestro sitio.
+Encabezados: H1: Fotos de nuestros clientes
+-----------------------------------------
+En la página Contacto agregué lo siguiente:
+KeyWords: CONTACTO, CLIENTES, EMPRESAS, TIENDAS, MAR LAVANDAS
+Titulos: Contacto | Mar de Lavandas
+Descripción: No te quedes con la duda y comunicate con nosotras, estamos pendiente de tu consulta en los medios de comunicación que utilizamos.
+Encabezados: H1: Dudas y/o consultas; H2: Serán respondidas en el acto
