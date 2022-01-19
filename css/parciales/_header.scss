@@ -1,3 +1,5 @@
+@import "../parciales/_mapa";
+
 *{
     margin: 0;
     padding: 0;
@@ -18,10 +20,10 @@
     }
 }
 .nav-link{
-    color: black;
+    color: map-get($color, princi);
     font-size: 20px;
     &:hover{
-        background-color: white; 
+        background-color: map-get($color, princi); 
     }
 }
 

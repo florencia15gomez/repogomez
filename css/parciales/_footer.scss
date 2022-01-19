@@ -1,19 +1,27 @@
-
+@import "../parciales/_mapa";
 .footer{
-    background-color: #c9b8c8;
+    flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: rgb(201,184,192);
+    background: linear-gradient(180deg, rgba(201,184,192,1) 0%, rgba(168,132,167,1) 35%, rgba(88,81,84,1) 100%, rgba(0,212,255,1) 100%);
+
+    .footer__h5{
+        font-size: large;
+      }
     .footer__logo{
         filter: brightness(1.1);
         mix-blend-mode: multiply;
-        width: 80px;
+        width: 45px;
     }
     .footer__wp{
         filter: brightness(1.1);
         mix-blend-mode: multiply;
-        width: 80px;
+        width: 45px;
         }
 }
+
 
 

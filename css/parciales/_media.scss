@@ -1,17 +1,62 @@
 
-@media screen and (max-width:576px){
+@media screen and (max-width:425px){
     .info-bf{
         display: flex;
         flex-direction: column;
     }
- 
-    .pie{
-        display: flex;
-        background-color: #c9b8c8;
+
+    .productos-h1{
+        font-size: 3rem;
     }
-    
+    h2{
+        font-size: 2rem;
+        margin: 2%;
+    }
+      
     .textlg{
-        font-size: small;
+        font-size: large;
+    }
+
+    .row p{
+        font-size: large;
+    }
+ 
+  
+    .why__us__img{
+        display: none;
+    }
+    .why__us__text{
+        position: relative;
+        left: 0%;
+        padding-right: 0%;
+            
+    }
+
+    .foot{
+        @include central
+    }
+
+    .descrip{
+        @include central;
+        position: relative;
+        left: 0%;
+    }
+
+    .img__descrip{
+        position: absolute;
+        left: 15%;
+        
+    }
+    .main__fondo{
+       display: grid;
+       grid-template-columns: 1fr;
+    }
+
+    .main__sub{
+        border: double 5px lavender;
+        background-color: goldenrod;
+        padding: 7px;
+        margin: 5%;
     }
     
 }
@@ -24,17 +69,14 @@
 
     .contenedor{
         margin: auto;
-        display: flex;
-        flex-direction: column;
         text-align: center;
-        align-items: center;
-        justify-content: center;
+        @include central;
     }
 
     h1{
-        font-size: 3rem;
+        font-size: 4rem;
         padding: 7px;
-        background-color: transparent;
+        
     }
 
     h1 span{
@@ -44,6 +86,9 @@
         background-color: transparent;
     }
     
+    h2{
+        font-size: 30px;
+    }
     .header{
         flex-direction: column;
         align-items: center;
@@ -65,21 +110,18 @@
     }
 
     .footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include central;
         font-size: 10px;
     }
     
       .footer__logo{
-        width: 30%;
-        padding: 14px;
+        width: 50%;
+        padding: 0px;
     }
 
     .footer__wp{
-        padding: 18px;
-        width: 30%;
+        padding: 0px;
+        width: 50%;
     }
 
      .main__infor{
@@ -97,4 +139,16 @@
         font-size: small;
     }
     
+    .why__us{
+        height: auto;
+    }
+    .why__us__img{
+        position: relative;
+    }
+    .why__us__text{
+        position: relative;
+        left: 0%;
+        padding-right: 0%;
+            
+    }
 }

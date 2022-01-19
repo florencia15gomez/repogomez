@@ -1,0 +1,34 @@
+/*-------ACLARACIÓN------------*/
+/*En este scss que tiene el nombre de _mapas, incluye también al mixin*/
+
+/*En el caso del extend lo apliqué directamente en _contacto.scss, lo cual voy a aclar
+También $boton es un mapa que lo utilicé para ese mismo scss*/
+
+
+/*$estilos y $color son mapas que los he ustilizado en _intro y colores principales de la página*/
+$estilos: (
+    color: white,
+    centro: center,
+    tama: 6rem,
+
+);
+
+$color:(
+    princi: white,
+    second: black,
+);
+
+$boton:(
+    send: lightblue,
+    clear: tomato,
+
+);
+
+/*Acá está el mixin que lo he aplicado donde utilizo el display flex, entre otros*/
+@mixin central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

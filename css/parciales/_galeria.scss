@@ -1,3 +1,11 @@
 .dise--ga{
-    border: solid 5px olive;
+    border: solid 5px $borde_color;
+    @include central;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
 }
+.dise--ga:hover{
+  transform: translateY(-3px) scale(1.1);
+}
+  

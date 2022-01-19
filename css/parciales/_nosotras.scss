@@ -1,4 +1,6 @@
 @import "../parciales/_variables";
+@import "../parciales/_mapa";
+
 .main__nosotras{
     padding: 20px 20px;
     display: grid;
@@ -18,7 +20,7 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-align: justify;
         font-size: x-large;
-        color: white;
+        color: map-get($color, princi);
     }
 }
 
@@ -27,7 +29,7 @@
    flex-direction: row;
    justify-content: space-evenly;
    .card-text{
-       color: black;
+       color: map-get($color, second);
        font-family: 'Laila', sans-serif;
    }
 }

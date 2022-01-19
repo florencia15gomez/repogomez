@@ -1,31 +1,29 @@
 @import "../parciales/_variables";
+@import "../parciales/_mapa";
+
 .bodymain{
     background-color: $main_color;
 }
 .contenedor {
     margin: auto;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    @include central;
     
 }
 h1 { 
     position: relative; 
-    float: left;
     background-color: $main_color;
-    color: white;
-    font-size: 7rem;
+    color: map-get($color, princi);
+    font-size: map-get($estilos, tama);
     font-family: 'Caveat Brush', cursive;
-    text-align: center;
+    text-align: map-get($estilos, centro);
 }
 h1 span {
     position:absolute;
     right:0;
     width:0;
     background-color: $main_color;
-    border-left: 1px solid white;
+    border-left: 1px solid map-get($color, princi);
     animation: escribir 5s steps(30);
 }
 
@@ -39,10 +37,7 @@ h1 span {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include central;
     .info-bf{
         display: flex;
         flex-direction: row;
@@ -55,4 +50,46 @@ h1 span {
         }
     }
 }
+
+.why__us{
+    @include central;
+    padding: 80px 50px;
+    position: relative;
+    overflow: hidden;
+    height: 30rem;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(253,252,233,1) 0%, rgba(235,192,234,1) 35%, rgba(201,184,192,1) 100%, rgba(0,212,255,1) 100%);
+    .why__us__img{
+            width: 30%;
+            border: solid 5px lavenderblush;
+            position: absolute;
+            height: auto;
+            top: 10%;
+            left: 8%;
+    }
+    .why__us__text{
+        @include central;
+        width: auto;
+        height: auto;
+        position: relative;
+        padding-right: 40%;
+        left: 40%;
+        .why__us__tit{
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 400;
+            font-size: 1.875em;
+            color: map-get($color, second);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .why__us__lg{
+            text-align: justify;
+            font-size: 1.0625em;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
 

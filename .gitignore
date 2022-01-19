@@ -1,0 +1,12 @@
+.vscode/
+.gitignore/
+.node_modules/
+
+
+git remote add origin https://github.com/florencia15gomez/newrepoprac.git
+git branch -M master
+git push -u origin master
+
+git remote add origin https://github.com/florencia15gomez/repogomez.git
+git branch -M master
+git push -u origin master

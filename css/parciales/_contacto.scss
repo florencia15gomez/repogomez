@@ -1,8 +1,9 @@
+@import "../parciales/_mapa";
 
 h5{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    border: white solid 5px;
+    border: map-get($color, princi) solid 5px;
 }
 
 .form{
@@ -10,22 +11,37 @@ h5{
 	padding:16px;
 	border-radius:10px;
 	margin:auto;
-	background-color: olive ;
+	background-color: $main_color;
 }
 
+
+/*Acá apliqué el extend*/
 .input__submit{
     width:100%;
     padding:8px 16px;
     margin-top:32px;
-    border:1px solid #000;
+    border:1px solid map-get($color, second);
     border-radius:5px;
     display:block;
-    color:#000000;
+    color:map-get($color, second);
     background-color: #e9e4b9;
-    .input__submit:hover{
-        cursor:pointer;
-    }
 } 
+
+.input__submit__send{
+    @extend .input__submit;
+    background-color: map-get($boton, send);
+
+}
+
+.input__submit__clear{
+    @extend .input__submit;
+    background-color: map-get($boton, clear);
+}
+
+.input__submit:hover{
+    cursor:pointer;
+    transform: (scale(1.1));
+}
     
 .textlg{
     font-size: calc(1.275rem + .3vw);

@@ -1,9 +1,16 @@
+@charset "UTF-8";
 /*Fuentes de google*/
 @import url("https://fonts.googleapis.com/css2?family=Corinthia&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 /*Header*/
+/*-------ACLARACIÓN------------*/
+/*En este scss que tiene el nombre de _mapas, incluye también al mixin*/
+/*En el caso del extend lo apliqué directamente en _contacto.scss, lo cual voy a aclar
+También $boton es un mapa que lo utilicé para ese mismo scss*/
+/*$estilos y $color son mapas que los he ustilizado en _intro y colores principales de la página*/
+/*Acá está el mixin que lo he aplicado donde utilizo el display flex, entre otros*/
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +35,7 @@
 }
 
 .nav-link {
-  color: black;
+  color: white;
   font-size: 20px;
 }
 
@@ -43,12 +50,19 @@
 }
 
 /*HTML Inicio*/
+/*-------ACLARACIÓN------------*/
+/*En este scss que tiene el nombre de _mapas, incluye también al mixin*/
+/*En el caso del extend lo apliqué directamente en _contacto.scss, lo cual voy a aclar
+También $boton es un mapa que lo utilicé para ese mismo scss*/
+/*$estilos y $color son mapas que los he ustilizado en _intro y colores principales de la página*/
+/*Acá está el mixin que lo he aplicado donde utilizo el display flex, entre otros*/
 .bodymain {
   background-color: #216283;
 }
 
 .contenedor {
   margin: auto;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,21 +70,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
   position: relative;
-  float: left;
   background-color: #216283;
   color: white;
-  font-size: 7rem;
+  font-size: 6rem;
   font-family: 'Caveat Brush', cursive;
   text-align: center;
 }
@@ -115,12 +127,12 @@ h1 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .beneficios--ml .info-bf {
@@ -145,9 +157,7 @@ h1 span {
   padding: 30px;
 }
 
-/*Footer*/
-.footer {
-  background-color: #c9b8c8;
+.why__us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,24 +165,116 @@ h1 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 50px;
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfce9), color-stop(35%, #ebc0ea), color-stop(100%, #c9b8c0), to(#00d4ff));
+  background: linear-gradient(180deg, #fdfce9 0%, #ebc0ea 35%, #c9b8c0 100%, #00d4ff 100%);
+}
+
+.why__us .why__us__img {
+  width: 30%;
+  border: solid 5px lavenderblush;
+  position: absolute;
+  height: auto;
+  top: 10%;
+  left: 8%;
+}
+
+.why__us .why__us__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: auto;
+  position: relative;
+  padding-right: 40%;
+  left: 40%;
+}
+
+.why__us .why__us__text .why__us__tit {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.875em;
+  color: black;
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+.why__us .why__us__text .why__us__lg {
+  text-align: justify;
+  font-size: 1.0625em;
+  margin-bottom: 2rem;
+}
+
+/*Footer*/
+/*-------ACLARACIÓN------------*/
+/*En este scss que tiene el nombre de _mapas, incluye también al mixin*/
+/*En el caso del extend lo apliqué directamente en _contacto.scss, lo cual voy a aclar
+También $boton es un mapa que lo utilicé para ese mismo scss*/
+/*$estilos y $color son mapas que los he ustilizado en _intro y colores principales de la página*/
+/*Acá está el mixin que lo he aplicado donde utilizo el display flex, entre otros*/
+.footer {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: #c9b8c0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c9b8c0), color-stop(35%, #a884a7), color-stop(100%, #585154), to(#00d4ff));
+  background: linear-gradient(180deg, #c9b8c0 0%, #a884a7 35%, #585154 100%, #00d4ff 100%);
+}
+
+.footer .footer__h5 {
+  font-size: large;
 }
 
 .footer .footer__logo {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
   mix-blend-mode: multiply;
-  width: 80px;
+  width: 45px;
 }
 
 .footer .footer__wp {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
   mix-blend-mode: multiply;
-  width: 80px;
+  width: 45px;
 }
 
 /*HTML Nosotras*/
+/*-------ACLARACIÓN------------*/
+/*En este scss que tiene el nombre de _mapas, incluye también al mixin*/
+/*En el caso del extend lo apliqué directamente en _contacto.scss, lo cual voy a aclar
+También $boton es un mapa que lo utilicé para ese mismo scss*/
+/*$estilos y $color son mapas que los he ustilizado en _intro y colores principales de la página*/
+/*Acá está el mixin que lo he aplicado donde utilizo el display flex, entre otros*/
 .main__nosotras {
   padding: 20px 20px;
   display: -ms-grid;
@@ -220,18 +322,171 @@ h1 span {
 }
 
 /*HTML Productos*/
+/*-------ACLARACIÓN------------*/
+/*En este scss que tiene el nombre de _mapas, incluye también al mixin*/
+/*En el caso del extend lo apliqué directamente en _contacto.scss, lo cual voy a aclar
+También $boton es un mapa que lo utilicé para ese mismo scss*/
+/*$estilos y $color son mapas que los he ustilizado en _intro y colores principales de la página*/
+/*Acá está el mixin que lo he aplicado donde utilizo el display flex, entre otros*/
 h4 {
   color: black;
   font-family: 'Abril Fatface', cursive;
   background-color: #216283;
 }
 
+.main__fondo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  background-image: url(../assets/fondo2inicio.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__sub {
+  text-align: center;
+  border: double 5px #c9b8c0;
+  background-color: goldenrod;
+  padding: 7px;
+  margin: 5%;
+}
+
+.descrip {
+  background: transparent;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  margin: 1px 0;
+  padding: 0;
+  left: 86px;
+}
+
+.main__dise {
+  position: relative;
+  -webkit-transition: 2s -webkit-transform;
+  transition: 2s -webkit-transform;
+  transition: 2s transform;
+  transition: 2s transform, 2s -webkit-transform;
+  display: block;
+  width: 70%;
+}
+
+.img__descrip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  background-color: rgba(201, 184, 192, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  -webkit-transition: 0.5s opacity ease-in-out;
+  transition: 0.5s opacity ease-in-out;
+  opacity: 0%;
+}
+
+.img__descrip .img__descrip:before {
+  position: absolute;
+  left: -10%;
+  top: -20%;
+  width: 10%;
+  height: 150%;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transform: rotate(15deg) translateX(-100%);
+          transform: rotate(15deg) translateX(-100%);
+  -webkit-transition: 2s all;
+  transition: 2s all;
+}
+
+.descrip:hover .main__dise {
+  -webkit-transform: scale(1) rotate(2deg);
+          transform: scale(1) rotate(2deg);
+}
+
+.descrip:hover .img__descrip {
+  opacity: 1;
+}
+
+.descrip:hover .img__descrip .descrip:hover .img__descrip:before {
+  -webkit-transform: rotate(150deg) translateX(0);
+          transform: rotate(150deg) translateX(0);
+}
+
+.productos-h1 {
+  position: relative;
+  background-color: #216283;
+  color: black;
+  font-size: 6rem;
+  font-family: 'Caveat Brush', cursive;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Oooh Baby';
+  font-weight: bolder;
+  font-size: 50px;
+  background-color: burlywood;
+}
+
 /*HTML Galeria*/
 .dise--ga {
-  border: solid 5px olive;
+  border: solid 5px #c9b8c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  overflow: hidden;
+}
+
+.dise--ga:hover {
+  -webkit-transform: translateY(-3px) scale(1.1);
+          transform: translateY(-3px) scale(1.1);
 }
 
 /*HTML Contacto*/
+/*-------ACLARACIÓN------------*/
+/*En este scss que tiene el nombre de _mapas, incluye también al mixin*/
+/*En el caso del extend lo apliqué directamente en _contacto.scss, lo cual voy a aclar
+También $boton es un mapa que lo utilicé para ese mismo scss*/
+/*$estilos y $color son mapas que los he ustilizado en _intro y colores principales de la página*/
+/*Acá está el mixin que lo he aplicado donde utilizo el display flex, entre otros*/
 h5 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
@@ -243,22 +498,33 @@ h5 {
   padding: 16px;
   border-radius: 10px;
   margin: auto;
-  background-color: olive;
+  background-color: #216283;
 }
 
-.input__submit {
+/*Acá apliqué el extend*/
+.input__submit, .input__submit__send, .input__submit__clear {
   width: 100%;
   padding: 8px 16px;
   margin-top: 32px;
-  border: 1px solid #000;
+  border: 1px solid black;
   border-radius: 5px;
   display: block;
-  color: #000000;
+  color: black;
   background-color: #e9e4b9;
 }
 
-.input__submit .input__submit:hover {
+.input__submit__send {
+  background-color: lightblue;
+}
+
+.input__submit__clear {
+  background-color: tomato;
+}
+
+.input__submit:hover, .input__submit__send:hover, .input__submit__clear:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .textlg {
@@ -268,7 +534,7 @@ h5 {
 
 /*Variables color main*/
 /*Media queries*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 425px) {
   .info-bf {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -278,14 +544,74 @@ h5 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .pie {
+  .productos-h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 2%;
+  }
+  .textlg {
+    font-size: large;
+  }
+  .row p {
+    font-size: large;
+  }
+  .why__us__img {
+    display: none;
+  }
+  .why__us__text {
+    position: relative;
+    left: 0%;
+    padding-right: 0%;
+  }
+  .foot {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #c9b8c8;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .textlg {
-    font-size: small;
+  .descrip {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    left: 0%;
+  }
+  .img__descrip {
+    position: absolute;
+    left: 15%;
+  }
+  .main__fondo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .main__sub {
+    border: double 5px lavender;
+    background-color: goldenrod;
+    padding: 7px;
+    margin: 5%;
   }
 }
 
@@ -297,6 +623,7 @@ h5 {
   }
   .contenedor {
     margin: auto;
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -304,18 +631,16 @@ h5 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 7px;
-    background-color: transparent;
   }
   h1 span {
     position: absolute;
@@ -323,6 +648,9 @@ h5 {
             animation: none;
     border-left: none;
     background-color: transparent;
+  }
+  h2 {
+    font-size: 30px;
   }
   .header {
     -webkit-box-orient: vertical;
@@ -359,21 +687,21 @@ h5 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 10px;
   }
   .footer__logo {
-    width: 30%;
-    padding: 14px;
+    width: 50%;
+    padding: 0px;
   }
   .footer__wp {
-    padding: 18px;
-    width: 30%;
+    padding: 0px;
+    width: 50%;
   }
   .main__infor {
     display: -webkit-box;
@@ -396,5 +724,24 @@ h5 {
   .textlg {
     font-size: small;
   }
+  .why__us {
+    height: auto;
+  }
+  .why__us__img {
+    position: relative;
+  }
+  .why__us__text {
+    position: relative;
+    left: 0%;
+    padding-right: 0%;
+  }
 }
+
+/*mapas*/
+/*-------ACLARACIÓN------------*/
+/*En este scss que tiene el nombre de _mapas, incluye también al mixin*/
+/*En el caso del extend lo apliqué directamente en _contacto.scss, lo cual voy a aclar
+También $boton es un mapa que lo utilicé para ese mismo scss*/
+/*$estilos y $color son mapas que los he ustilizado en _intro y colores principales de la página*/
+/*Acá está el mixin que lo he aplicado donde utilizo el display flex, entre otros*/
 /*# sourceMappingURL=main.css.map */

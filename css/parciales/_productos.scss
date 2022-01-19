@@ -1,6 +1,98 @@
 @import "../parciales/_variables";
+@import "../parciales/_mapa";
+
 h4{
-    color: black;
+    color: map-get($color, second);
     font-family: 'Abril Fatface', cursive;
     background-color: $main_color;
 }
+.main__fondo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      padding: 10px;
+      background-image: url(../assets/fondo2inicio.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      align-items: center;
+        
+    }
+    
+    .main__sub{
+      text-align: center;
+      border: double 5px $borde_color;
+    background-color: goldenrod;
+    padding: 7px;
+    margin: 5%;
+    }
+    
+    .descrip{
+      background: transparent;
+      display:inline-block;   
+      overflow:hidden; 
+      position:relative;
+      margin:1px 0;
+      padding:0;
+      left: 86px
+      
+    }
+    .main__dise{
+      position:relative;
+      transition:2s transform;
+      display:block;
+      width: 70%;
+    }
+    .img__descrip{
+      position:absolute;
+      left:0;
+      top:0;
+      width:70%;
+      height:100%;
+      background-color:  rgba(201,184,192,0.50);    
+      @include central;  
+      text-align: center; 
+      color: map-get($color, second);
+      font-family:sans-serif;
+      transition: 0.5s opacity ease-in-out;
+      opacity:0%; 
+      .img__descrip:before {
+      position:absolute;
+      left:-10%;
+      top:-20%;
+      width:10%;
+      height:150%;
+      background:rgba(255,255,255,0.9);
+      transform:rotate(15deg) translateX(-100%);
+      transition:2s all;
+      }
+    }
+    
+    .descrip:hover .main__dise {
+        transform: scale(1) rotate(2deg);
+    }
+    .descrip:hover .img__descrip{
+        opacity: 1;   
+        .descrip:hover .img__descrip:before {
+        transform:rotate(150deg) translateX(0);
+        }
+    }
+
+    .productos-h1{
+      position: relative;
+      background-color: #216283;
+      color: map-get($color, second);
+      font-size: 6rem;
+      font-family: 'Caveat Brush', cursive;
+      text-align: center;
+    }
+
+    h2{
+      text-align: center;
+      font-family: 'Oooh Baby';
+      font-weight: bolder;
+      font-size: 50px;
+      background-color: burlywood;
+  
+    }
