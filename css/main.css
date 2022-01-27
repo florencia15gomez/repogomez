@@ -254,11 +254,17 @@ También $boton es un mapa que lo utilicé para ese mismo scss*/
   font-size: large;
 }
 
+.footer .footer__list {
+  list-style: none;
+}
+
 .footer .footer__logo {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
   mix-blend-mode: multiply;
   width: 45px;
+  display: block;
+  margin: auto;
 }
 
 .footer .footer__wp {
@@ -266,6 +272,8 @@ También $boton es un mapa que lo utilicé para ese mismo scss*/
           filter: brightness(1.1);
   mix-blend-mode: multiply;
   width: 45px;
+  display: block;
+  margin: auto;
 }
 
 /*HTML Nosotras*/

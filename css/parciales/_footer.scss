@@ -10,16 +10,23 @@
 
     .footer__h5{
         font-size: large;
-      }
+    }
+    .footer__list{
+        list-style: none;
+    }
     .footer__logo{
         filter: brightness(1.1);
         mix-blend-mode: multiply;
         width: 45px;
+        display: block;
+        margin: auto;
     }
     .footer__wp{
         filter: brightness(1.1);
         mix-blend-mode: multiply;
         width: 45px;
+        display: block;
+        margin: auto;
         }
 }
 
