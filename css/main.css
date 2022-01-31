@@ -371,12 +371,16 @@ h4 {
 
 .descrip {
   background: transparent;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
   position: relative;
-  margin: 1px 0;
-  padding: 0;
-  left: 86px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main__dise {
@@ -391,8 +395,6 @@ h4 {
 
 .img__descrip {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 70%;
   height: 100%;
   background-color: rgba(201, 184, 192, 0.5);
